@@ -11,7 +11,7 @@ Data Source: [Breast Cancer Coimbra Data Set]()
 
 - `load_data.py` Python script loads a CSV file.
 - To load the data, use `load_data.py` script and parse `breast-cancer-coimbra-data-set.csv` file as an argument.
-- Run script in console as `python load_data.py breast-cancer-coimbra-data-set.csv`.
+- Run script in console as `python scripts/load_data.py data/breast-cancer-coimbra-data-set.csv`.
 
 ### Plan
 
