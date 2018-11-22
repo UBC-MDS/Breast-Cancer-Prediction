@@ -1,6 +1,6 @@
 # Supervised Learning Model to Predict Breast Cancer
 ## DSCI 522 Workflows
-Data Source: [Breast Cancer Coimbra Data Set]()
+Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)
 
 ### Question
 
@@ -9,8 +9,8 @@ Data Source: [Breast Cancer Coimbra Data Set]()
 
 ### Data Import
 
-- `load_data.py` Python script loads a CSV file.
-- To load the data, use `load_data.py` script and parse `breast-cancer-coimbra-data-set.csv` file as an argument.
+- [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) Python script loads a CSV file.
+- To load the data, use [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) script and parse [breast-cancer-coimbra-data-set.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/data/breast-cancer-coimbra-data-set.csv) file as an argument.
 - Run script in console as `python scripts/load_data.py data/breast-cancer-coimbra-data-set.csv`.
 
 ### Plan
@@ -36,7 +36,7 @@ Data Source: [Breast Cancer Coimbra Data Set]()
 
 ### Result Summary and Visualization
 	
-- Visualize accuracy of predicative model on test data set.
+- Report accuracy of predicative model on test data set.
 
 ### Dependencies
 Python and Python Packages:
