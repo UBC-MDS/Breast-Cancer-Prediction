@@ -22,12 +22,21 @@ Data Source: [Breast Cancer Coimbra Data Set]()
 - Include a visualization of the decision tree
 - Visualise the test data predictions
 
+### Usage:
+
+1. Clone this repo, and using the command line, navigate to the root of this project.
+
+2. Run the following commands:
+
+python scripts/read_clean.py data/breast_cancer.csv data/breast_cancer_new.csv
+python scripts/eda.py data/breast_cancer_new.csv img/eda.png
+python scripts/analysis.py data/breast_cancer_new.csv img/tree.png
+
 ### Result Summary and Visualization
 	
-- Visualize accuracy of predicative model on test data set
-- Raw output of test data predictions
+- Visualize accuracy of predicative model on test data set.
 
-## Dependencies
+### Dependencies
 Python and Python Packages:
 - numpy
 - pandas
