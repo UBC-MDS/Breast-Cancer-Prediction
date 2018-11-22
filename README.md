@@ -28,9 +28,9 @@ Data Source: [Breast Cancer Coimbra Data Set]()
 
 2. Run the following commands:
 
-python scripts/read_clean.py data/breast_cancer.csv data/breast_cancer_new.csv
+''' python scripts/read_clean.py data/breast_cancer.csv data/breast_cancer_new.csv
 python scripts/eda.py data/breast_cancer_new.csv img/eda.png
-python scripts/analysis.py data/breast_cancer_new.csv img/tree.png
+python scripts/analysis.py data/breast_cancer_new.csv img/tree.png'''
 
 ### Result Summary and Visualization
 	
