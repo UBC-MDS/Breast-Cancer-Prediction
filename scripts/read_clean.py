@@ -35,6 +35,8 @@ def main():
     assert len([x for x in data.Resistin if x < 0]) < 1 , "all values should be postive"
     assert len([x for x in data.MCP1 if x < 0]) < 1 , "all values should be postive"
 
+    # Checking if last column is classification
+    assert len([x for x in data.Age if x < 0]) < 1 , "all values should be postive"
 
     #Writing new csv  input_file
     data.to_csv(args.output_file)
