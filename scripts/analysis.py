@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser()
 
 # adding argument for input file
 parser.add_argument('input_file')
+parser.add_argument('importance_file')
 parser.add_argument('output_file')
 args = parser.parse_args()
 
@@ -38,8 +39,24 @@ def main():
     results = results.T
     results.columns = ['Features', 'Importance']
     results = results.sort_values(by='Importance', ascending=False)
-    results.to_csv(args.output_file, index=False)
+    results.to_csv(args.importance_file, index=False)
     
+    # make predictions on test and training data
+    predictions_test = model.predict(Xtest)
+    predictions_train = model.predict(Xtrain)
+    
+    # combine all the data to save for output
+    Xtrain['Classification'] = ytrain
+    Xtest['Classification'] = ytest
+    
+    Xtest['Predictions'] = predictions_test
+    Xtrain['Predictions'] = predictions_train
+    
+    Xtrain['Type'] = "train"
+    Xtest['Type'] = "test"
+    
+    output = Xtrain.append(other=Xtest)
+    output.to_csv(args.output_file, index=False)
 
 def best_depth(X, y):
     '''
