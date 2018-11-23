@@ -4,7 +4,7 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
 
 ### Question
 
-- Using quantitative health attributes from Breast Cancer Coimbra data set, predict whether individuals have breast cancer or not?
+- What are the strongest predictors of breast cancer?
 - Type of question = predictive 
 
 ### Data Import
