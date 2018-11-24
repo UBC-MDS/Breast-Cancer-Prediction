@@ -96,6 +96,8 @@ Python and Python Packages:
 
 ### Citation 
 
-- (Wikipedia)[https://en.wikipedia.org/wiki/Insulin] (for basic terms of medical attributes and their importance in the cancer research)
+- (Wikipedia)[https://en.wikipedia.org/wiki/Insulin] (for basic terms of medical attributes and their importance in the cancer research).
+
  Citation Request(as requested by the data source page):
+ 
 -[Patricio, 2018] Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
