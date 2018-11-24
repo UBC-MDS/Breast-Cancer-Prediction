@@ -1,3 +1,13 @@
+# Talha A. Siddiqui, Nov 2018
+#
+# This script visualizes the results of fetures importance based on the
+# decision tree classifier in analysis.py. Argument variables of
+# the script are a features importance data file, and a result png.
+#
+# Dependencies: argparse, pandas, numpy, matplotlib, seaborn
+#
+# Usage: python plot.py importance_file results.png
+
 # package import for parsing arguments
 import argparse
 import pandas as pd
@@ -19,7 +29,6 @@ def main():
 
     # produce a figure of feature importance
     output = sns.barplot(df['Features'], df['Importance'], palette='Blues_d')
-    output.set_xticklabels(output.get_xticklabels(), rotation=45)
     fig = output.get_figure()
     fig.savefig(args.output_file)
 
