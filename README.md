@@ -2,16 +2,19 @@
 ## DSCI 522 Workflows
 Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)
 
+
 ### Question
 
 - What are the strongest predictors of breast cancer?
 - Type of question = predictive 
+
 
 ### Data Import
 
 - [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) Python script loads a CSV file.
 - To load the data, use [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) script and parse [breast-cancer-coimbra-data-set.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/data/breast-cancer-coimbra-data-set.csv) file as an argument.
 - Run script in console as `python scripts/load_data.py data/breast-cancer-coimbra-data-set.csv`.
+
 
 ### Abstract 
 
@@ -50,9 +53,6 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
   
   2=Patients
 
-#### Relevant research links:
-  - [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
-  - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
 
 ### Plan
 
@@ -66,6 +66,7 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
 ### Choosing decision tree classification
 
 We choose decision tree classification for our analysis because it is parametric. In our attempt to build a model that ranks features based on their importance, decision tree classification takes all of the features and complete training data to pick the strongest predictors. Other supervised learning approaches that are non-parametric such as K-Nearest Neighbours would not be able to rank the features by importance, and thus, fail to answer our analysis question.
+
 
 ### Usage:
 
@@ -87,6 +88,7 @@ We choose decision tree classification for our analysis because it is parametric
 
 - Report accuracy of predicative model on test data set.
 
+
 ### Dependencies
 Python and Python Packages:
 - numpy
@@ -95,6 +97,12 @@ Python and Python Packages:
 - matplotlib
 - seaborn
 - argparse
+
+
+### Relevant research links:
+  - [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
+  - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
+
 
 ### Citation 
 
