@@ -2,16 +2,19 @@
 ## DSCI 522 Workflows
 Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)
 
+
 ### Question
 
 - What are the strongest predictors of breast cancer?
 - Type of question = predictive 
+
 
 ### Data Import
 
 - [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) Python script loads a CSV file.
 - To load the data, use [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) script and parse [breast-cancer-coimbra-data-set.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/data/breast-cancer-coimbra-data-set.csv) file as an argument.
 - Run script in console as `python scripts/load_data.py data/breast-cancer-coimbra-data-set.csv`.
+
 
 ### Abstract 
 
@@ -23,7 +26,9 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
 #### Attribute Information:
     
   Features used in data set are as follows:
+  
   Quantitative Attributes: 
+  
   **Age** (years) : Age of the individual.
   
   **BMI** (kg/m2) : Body mass index of the individual.
@@ -43,12 +48,11 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
   **MCP-1** (pg/dL) : The chemokine (C-C motif) ligand 2 (CCL2) is also referred to as monocyte chemoattractant protein 1 (MCP1) and small inducible cytokine A2. CCL2 is a small cytokine that belongs to the CC chemokine family. 
   
   Labels: 
+  
   1=Healthy controls 
+  
   2=Patients
 
-#### Relevant research links:
-  - [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
-  - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
 
 ### Plan
 
@@ -62,6 +66,7 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
 ### Choosing decision tree classification
 
 We choose decision tree classification for our analysis because it is parametric. In our attempt to build a model that ranks features based on their importance, decision tree classification takes all of the features and complete training data to pick the strongest predictors. Other supervised learning approaches that are non-parametric such as K-Nearest Neighbours would not be able to rank the features by importance, and thus, fail to answer our analysis question.
+
 
 ### Usage:
 
@@ -83,6 +88,7 @@ We choose decision tree classification for our analysis because it is parametric
 
 - Report accuracy of predicative model on test data set.
 
+
 ### Dependencies
 Python and Python Packages:
 - numpy
@@ -92,9 +98,16 @@ Python and Python Packages:
 - seaborn
 - argparse
 
+
+### Relevant research links:
+  - [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
+  - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
+
+
 ### Citation 
 
-- (Wikipedia)[https://en.wikipedia.org/wiki/Insulin] (for basic terms of medical attributes and their importance in the cancer research)
- Citation Request:
-- Please include this citation if you plan to use this database: 
- [Patricio, 2018] Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). Using Resistin, glucose, age and BMI to predict the presence of breast cancer. BMC Cancer, 18(1). [Web Link]
+- (Wikipedia)[https://en.wikipedia.org/wiki/Insulin] (for basic terms of medical attributes and their importance in the cancer research).
+
+ Citation Request(as requested by the data source page):
+ 
+- [Patricio, 2018] Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
