@@ -38,8 +38,9 @@ def main():
     # Checking if last column is classification
     assert len([x for x in data.Age if x < 0]) < 1 , "all values should be postive"
 
+
     #Writing new csv  input_file
-    data.to_csv(args.output_file)
+    data.to_csv(args.output_file, index=False)
 
     # Summary of all the features
     data.describe()
