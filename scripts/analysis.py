@@ -1,6 +1,6 @@
 # Talha A. Siddiqui, Nov 2018
 #
-# This script analyzes the data and makes predictionsself.
+# This script analyzes the data and makes predictions.
 # It creates a decision tree classifier with ideal hyperparameters
 # (maximum depth and minimum samples split). These hyperparameters
 # are calculated over the 80% training data using 5-fold cross validation.
