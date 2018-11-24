@@ -21,14 +21,16 @@ def main():
     data2 = data[data.Classification==2]
 
     # Visualize the features
-    feature_cols = data.iloc[:,:9]
-    for i in feature_cols:
-        sns_data1 = sns.distplot(data1[i].dropna(),kde = False)
-        sns_data2 = sns.distplot(data2[i].dropna(),kde = False)
-        sns_data1.set_title(i)
+    feature_cols = data.columns.values[:-1]
+    number = range
+    for idx,item in enumerate(feature_cols):
+        sns_data1 = sns.distplot(data1[item].dropna(),kde = False, label="Healthy controls")
+        sns_data2 = sns.distplot(data2[item].dropna(),kde = False, label="Patient")
+        sns_data1.set_title(item)
         sns_data1.set_ylabel("Count")
-        sns_data1.set_xlabel(i)
-        plt.savefig('plot'+str(i)+'.png')
+        sns_data1.set_xlabel(item)
+        plt.legend()
+        plt.savefig(args.output_file+str(idx+1)+'.png')
         plt.close()
 
 # call main function
