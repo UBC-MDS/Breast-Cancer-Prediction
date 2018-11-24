@@ -23,7 +23,9 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
 #### Attribute Information:
     
   Features used in data set are as follows:
+  
   Quantitative Attributes: 
+  
   **Age** (years) : Age of the individual.
   
   **BMI** (kg/m2) : Body mass index of the individual.
@@ -95,6 +97,5 @@ Python and Python Packages:
 ### Citation 
 
 - (Wikipedia)[https://en.wikipedia.org/wiki/Insulin] (for basic terms of medical attributes and their importance in the cancer research)
- Citation Request:
-- Please include this citation if you plan to use this database: 
- [Patricio, 2018] Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). Using Resistin, glucose, age and BMI to predict the presence of breast cancer. BMC Cancer, 18(1). [Web Link]
+ Citation Request(as requested by the data source page):
+-[Patricio, 2018] Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
