@@ -86,6 +86,7 @@ We choose decision tree classification for our analysis because it is parametric
 The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of predicative model on test data set.
 
 | File| Link to file|
+| ---- | -------|
 | File after cleaning the data| [breast_cancer_new.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/breast_cancer_new.csv)|
 | File that includes all the predictions| [detailed.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/detailed.csv)|
 | Table for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
