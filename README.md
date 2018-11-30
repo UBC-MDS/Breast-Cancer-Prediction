@@ -1,6 +1,15 @@
 # Supervised Learning Model to Predict Breast Cancer
 ## DSCI 522 Workflows
 
+### Date : 2018-11-30
+
+### Authors
+
+| Name | Github |
+| ---- | -------|
+| Akansha Vashisth |[Akansha Vashisth](https://github.com/akanshaVashisth)|
+| Talha Siddiqui| [Talha Siddiqui](https://github.com/talhaadnan100)|
+
 
 ### Question
 
@@ -74,11 +83,18 @@ We choose decision tree classification for our analysis because it is parametric
 
 ### Result Summary and Visualization
 
-The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization of the importance of features and accuracy of predicative model on test data set.
+The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of predicative model on test data set.
+
+| File| Link to file|
+| File after cleaning the data| [breast_cancer_new.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/breast_cancer_new.csv)|
+| File that includes all the predictions| [detailed.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/detailed.csv)|
+| Table for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
+| Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
+
 
 ### Dependencies
 
-Python and the following python packages:
+Python 3.7 and the following python packages:
 - numpy (version 1.14.3)
 - pandas (version 0.23.0)
 - sklearn (version 0.19.1)
@@ -96,8 +112,3 @@ Python and the following python packages:
 
 - Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
 
-### Team Members
-
-[Akansha Vashisth](https://github.com/akanshaVashisth)
-
-[Talha Siddiqui](https://github.com/talhaadnan100)
