@@ -1,9 +1,8 @@
 # Supervised Learning Model to Predict Breast Cancer
-## DSCI 522 Workflows
 
 #### Date : 2018-11-30
 
-### Authors
+#### Authors
 
 | Name | Github |
 | ---- | -------|
@@ -11,20 +10,20 @@
 | Talha Siddiqui| [talhaadnan100](https://github.com/talhaadnan100)|
 
 
-### Question
+#### Question
 
 - What are the strongest predictors of breast cancer?
 - Type of question = predictive 
 
-### Introduction 
+#### Introduction 
 
 The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer paitients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
 
-#### Motivation for analysis
+##### Motivation for analysis
 
 Cancer is an open ended problem till date. It is one of biggest research areas of medical science. There are many types of  cancers which are rapidly getting common. It is estimated that 41,400 deaths (40,920 women and 480 men) from breast cancer will occur this year [2018](https://www.cancer.net/cancer-types/breast-cancer/statistics/2015). We were highly interested to use machine learning models to dive in this dataset and explore about breast cancer predictions.
 
-### Data Exploration
+#### Data Exploration
   
 The data used in the analysis is from the UCI machine learning repository [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The data comprises of nine predictors, and a binary dependent variable indicating the presence or absence of breast cancer. All nine predictors are quantitative variables with positive values.
   
@@ -51,7 +50,7 @@ Quantitative Attributes:
 **Labels**: 1 denotes Healthy controls and 2 denotes Patients.
 
 
-### Plan of action
+#### Plan of action
 
 - Use supervised learning to build a predictive model.
 - 80% of the data will be used to train the predictive model, and 20% will be used to test the predictive model. To avoid over-fitting in the model, use cross validation.
@@ -59,11 +58,11 @@ Quantitative Attributes:
 - Use decision tree classification to build the predictive model.
 - Visualise the test data predictions.
 
-### Choosing decision tree classification
+#### Choosing decision tree classification
 
 We choose decision tree classification for our analysis because it is parametric. In our attempt to build a model that ranks features based on their importance, decision tree classification takes all of the features and complete training data to pick the strongest predictors. Other supervised learning approaches that are non-parametric such as K-Nearest Neighbours would not be able to rank the features by importance, and thus, fail to answer our analysis question.
 
-### Usage
+#### Usage
 
 1. Clone this repo, and using the command line, navigate to the root of this project.
 
@@ -81,7 +80,7 @@ We choose decision tree classification for our analysis because it is parametric
 
 ``Rscript -e "rmarkdown::render('doc/report.Rmd')``
 
-### Result Summary and Visualization
+#### Result Summary and Visualization
 
 The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of predicative model on test data set.
 
@@ -93,7 +92,7 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 | Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
 
 
-### Dependencies
+#### Dependencies
 
 Python 3.7 and the following python packages:
 - numpy (version 1.14.3)
@@ -103,13 +102,12 @@ Python 3.7 and the following python packages:
 - seaborn (version 0.9.0)
 - argparse (version 1.0.10)
 
-### Relevant research links:
+#### Relevant research links:
 
 [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
 
-### Citation 
+#### Citation 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Insulin) (for basic terms of medical attributes and their importance in the cancer research).
 
-- Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
-
+- Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1).
