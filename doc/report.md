@@ -1,7 +1,7 @@
 Breast Cancer Prediction Report
 ================
 Akansha Vashisth, Talha Siddiqui
-2018/11/24
+2018/11/30
 
 Introduction
 ------------
@@ -30,9 +30,7 @@ Table 1. Summary of data set
 
 A visual distribution of each predictor separated by breast cancer patients and healthy controls is as follows:
 
-![](report_files/figure-markdown_github/eda_plots-1.png)
-
-Figure 1. Distribution of predictors separated by classification
+![Figure 1. Distribution of predictors separated by classification](report_files/figure-markdown_github/eda_plots-1.png)
 
 Analysis
 --------
@@ -41,18 +39,17 @@ The analysis to identify the strongest predictors is best addressed using a deci
 
 The configuration of the decision tree classifier algorithm was optimized for this analysis by the process of cross-validation. In this process, different values of maximum tree depth and minimum samples split were tested on a subset of the data and the optimum values were used to carry out the predictions. The accuracy of the predictions on training and test data are as follows:
 
-![](report_files/figure-markdown_github/unnamed-chunk-1-1.png)
-
-Figure 2. Training and test accuracy
+![Figure 2. Training and test accuracy](report_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
 Results
 -------
 
 The result of the analysis indicates that Glucose, Resistin and Age are the strongest indicators of breast cancer. The complete list of parameters which are important in predicting breast cancer are as follows:
 
-![strongest-predictors](../img/results.png)
-
+<img src="../results/results.png" alt="Figure 3. Predictors of breast cancer" width="640" />
+<p class="caption">
 Figure 3. Predictors of breast cancer
+</p>
 
 The analysis suggests that Glucose levels are around 36%, Resistin 22% and Age 12% indicative of breast cancer. The predictors that are not indicative of breast cancer are HOMA and Insulin.
 
