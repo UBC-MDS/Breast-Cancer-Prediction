@@ -89,7 +89,7 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 | ---- | -------|
 | File after cleaning the data| [breast_cancer_new.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/breast_cancer_new.csv)|
 | File that includes all the predictions| [detailed.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/detailed.csv)|
-| Table for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
+| File for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
 | Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
 
 
