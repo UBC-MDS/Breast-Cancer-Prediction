@@ -96,7 +96,7 @@ Python and the following python packages:
 
 - Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
 
-### Team
+### Team Members
 
 [Akansha Vashisth](https://github.com/akanshaVashisth)
 
