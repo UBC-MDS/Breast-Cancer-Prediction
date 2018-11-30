@@ -9,10 +9,11 @@
 
 ### Introduction 
 
-   The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer paitients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
+The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer paitients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
 
-#### Motivation for analysis:
-   Cancer is an open ended problem till date. It is one of biggest research areas of medical science. There are many types of  cancers which are rapidly getting common. It is estimated that 41,400 deaths (40,920 women and 480 men) from breast cancer will occur this year [2018](https://www.cancer.net/cancer-types/breast-cancer/statistics/2015). We were highly interested to use machine learning models to dive in this dataset and explore about breast cancer predictions.
+#### Motivation for analysis
+
+Cancer is an open ended problem till date. It is one of biggest research areas of medical science. There are many types of  cancers which are rapidly getting common. It is estimated that 41,400 deaths (40,920 women and 480 men) from breast cancer will occur this year [2018](https://www.cancer.net/cancer-types/breast-cancer/statistics/2015). We were highly interested to use machine learning models to dive in this dataset and explore about breast cancer predictions.
 
 ### Data Exploration
   
@@ -38,12 +39,8 @@ Quantitative Attributes:
   
 **MCP-1** (pg/dL) : The chemokine (C-C motif) ligand 2 (CCL2) is also referred to as monocyte chemoattractant protein 1 (MCP1) and small inducible cytokine A2. CCL2 is a small cytokine that belongs to the CC chemokine family. 
   
-  
-Labels: 
-  
-1=Healthy controls 
-  
-2=Patients
+**Labels**: 1 denotes Healthy controls and 2 denotes Patients.
+
 
 ### Plan of action
 
@@ -80,7 +77,8 @@ We choose decision tree classification for our analysis because it is parametric
 The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization of the importance of features and accuracy of predicative model on test data set.
 
 ### Dependencies
-Python and Python Packages:
+
+Python and the following python packages:
 - numpy (version 1.14.3)
 - pandas (version 0.23.0)
 - sklearn (version 0.19.1)
@@ -89,7 +87,8 @@ Python and Python Packages:
 - argparse (version 1.0.10)
 
 ### Relevant research links:
-  - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
+
+[Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
 
 ### Citation 
 
@@ -100,4 +99,5 @@ Python and Python Packages:
 ### Team
 
 [Akansha Vashisth](https://github.com/akanshaVashisth)
+
 [Talha Siddiqui](https://github.com/talhaadnan100)
