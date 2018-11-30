@@ -29,25 +29,25 @@ The data used in the analysis is from the UCI machine learning repository [Breas
   
 Quantitative Attributes: 
   
-**Age** (years) : Age of the individual.
+*Age* (years) : Age of the individual.
   
-**BMI** (kg/m2) : Body mass index of the individual.
+*BMI* (kg/m2) : Body mass index of the individual.
   
-**Glucose** (mg/dL) : Glucose level of the individual. 
+*Glucose* (mg/dL) : Glucose level of the individual. 
   
-**Insulin** (µU/mL) : Insulin level of the individual. Insulin is a hormone made by the pancreas that allows your body to use sugar (glucose) from carbohydrates in the food that you eat for energy or to store glucose for future use.
+*Insulin* (µU/mL) : Insulin level of the individual. Insulin is a hormone made by the pancreas that allows your body to use sugar (glucose) from carbohydrates in the food that you eat for energy or to store glucose for future use.
   
-**HOMA** : Homeostasis model assessment used to detect insulin resistance and identify patients at high risk of breast cancer development.
+*HOMA* : Homeostasis model assessment used to detect insulin resistance and identify patients at high risk of breast cancer development.
   
-**Leptin** (ng/mL) : Leptin, "the hormone of energy expenditure", is a hormone predominantly made by adipose cells that helps to regulate energy balance by inhibiting hunger. Leptin is opposed by the actions of the hormone ghrelin, the "hunger hormone". Both hormones act on receptors in the arcuate nucleus of the hypothalamus. 
+*Leptin* (ng/mL) : Leptin, "the hormone of energy expenditure", is a hormone predominantly made by adipose cells that helps to regulate energy balance by inhibiting hunger. Leptin is opposed by the actions of the hormone ghrelin, the "hunger hormone". Both hormones act on receptors in the arcuate nucleus of the hypothalamus. 
   
-**Adiponectin** (µg/mL) : Adiponectin (also referred to as GBP-28, apM1, AdipoQ and Acrp30) is a protein hormone which is involved in regulating glucose levels as well as fatty acid breakdown. In humans it is encoded by the ADIPOQ gene and it is produced in adipose tissue.
+*Adiponectin* (µg/mL) : Adiponectin (also referred to as GBP-28, apM1, AdipoQ and Acrp30) is a protein hormone which is involved in regulating glucose levels as well as fatty acid breakdown. In humans it is encoded by the ADIPOQ gene and it is produced in adipose tissue.
   
-**Resistin** (ng/mL) : Resistin also known as adipose tissue-specific secretory factor (ADSF) or C/EBP-epsilon-regulated myeloid-specific secreted cysteine-rich protein (XCP1) is a cysteine-rich adipose-derived peptide hormone that in humans is encoded by the RETN gene.
+*Resistin* (ng/mL) : Resistin also known as adipose tissue-specific secretory factor (ADSF) or C/EBP-epsilon-regulated myeloid-specific secreted cysteine-rich protein (XCP1) is a cysteine-rich adipose-derived peptide hormone that in humans is encoded by the RETN gene.
   
-**MCP-1** (pg/dL) : The chemokine (C-C motif) ligand 2 (CCL2) is also referred to as monocyte chemoattractant protein 1 (MCP1) and small inducible cytokine A2. CCL2 is a small cytokine that belongs to the CC chemokine family. 
+*MCP-1* (pg/dL) : The chemokine (C-C motif) ligand 2 (CCL2) is also referred to as monocyte chemoattractant protein 1 (MCP1) and small inducible cytokine A2. CCL2 is a small cytokine that belongs to the CC chemokine family. 
   
-**Labels**: 1 denotes Healthy controls and 2 denotes Patients.
+*Labels*: 1 denotes Healthy controls and 2 denotes Patients.
 
 
 #### Plan of action
