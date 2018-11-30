@@ -81,12 +81,12 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 
 ### Dependencies
 Python and Python Packages:
-- numpy
-- pandas
-- sklearn
-- matplotlib
-- seaborn
-- argparse
+- numpy (version 1.14.3)
+- pandas (version 0.23.0)
+- sklearn (version 0.19.1)
+- matplotlib (version 3.0.0)
+- seaborn (version 0.9.0)
+- argparse (version 1.0.10)
 
 ### Relevant research links:
   - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
@@ -96,3 +96,8 @@ Python and Python Packages:
 - [Wikipedia](https://en.wikipedia.org/wiki/Insulin) (for basic terms of medical attributes and their importance in the cancer research).
 
 - Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
+
+### Team
+
+[Akansha Vashisth](https://github.com/akanshaVashisth)
+[Talha Siddiqui](https://github.com/talhaadnan100)
