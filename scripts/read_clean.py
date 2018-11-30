@@ -3,8 +3,12 @@
 import argparse
 import pandas as pd
 
-# input file
-#input_file = dataR2.csv
+'''This script does the following:
+- reads the input file(breast_cancer.csv parsed by the argument),
+- verfies all the columns in the file using assert statements that verify all variables are complete (i.e. don't have NAs or missing values),
+- changes column name 'MCP.1' to 'MCP1',
+- writes the new clean data file(output file).
+'''
 
 # variable for parsing
 parser = argparse.ArgumentParser()

@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+"""This script visualizes the distributions of training data features using histograms to identify better predictors from our data set"""
+
 # variable for parsing
 parser = argparse.ArgumentParser()
 
