@@ -1,9 +1,19 @@
+# Akansha Vashisth, Nov 2018
+#
+# This script visualizes the distributions of training data features.
+# For visualization, it uses histograms to identify better predictors from our data set.
+# Argument variables of the script are an input data file and
+# visualization plots of training data distributions.
+#
+# Dependencies: argparse, pandas, seaborn, matplotlib
+#
+# Usage: python scripts/eda.py results/breast_cancer_new.csv img/plot
+
+# package import for parsing arguments
 import argparse
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-
-"""This script visualizes the distributions of training data features using histograms to identify better predictors from our data set"""
 
 # variable for parsing
 parser = argparse.ArgumentParser()

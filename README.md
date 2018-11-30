@@ -1,6 +1,5 @@
 # Supervised Learning Model to Predict Breast Cancer
 ## DSCI 522 Workflows
-Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)
 
 
 ### Question
@@ -8,22 +7,12 @@ Data Source: [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/dat
 - What are the strongest predictors of breast cancer?
 - Type of question = predictive 
 
-
-
 ### Introduction 
 
-   The goal of this project is to discover the strongest predictors of breast cancer in the above data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer paitients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
+   The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer paitients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
 
-##### Motivation for analysis:
+#### Motivation for analysis:
    Cancer is an open ended problem till date. It is one of biggest research areas of medical science. There are many types of  cancers which are rapidly getting common. It is estimated that 41,400 deaths (40,920 women and 480 men) from breast cancer will occur this year [2018](https://www.cancer.net/cancer-types/breast-cancer/statistics/2015). We were highly interested to use machine learning models to dive in this dataset and explore about breast cancer predictions.
-
-
-### Data Import
-
-- [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) Python script loads a CSV file.
-- To load the data, use [load_data.py](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/scripts/load_data.py) script and parse [breast-cancer-coimbra-data-set.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/data/breast-cancer-coimbra-data-set.csv) file as an argument.
-- Run script in console as `python scripts/load_data.py data/breast-cancer-coimbra-data-set.csv`.
-
 
 ### Data Exploration
   
@@ -56,21 +45,17 @@ Labels:
   
 2=Patients
 
-
 ### Plan of action
 
 - Use supervised learning to build a predictive model.
-- 80% of the data will be used the train the predictive model, and 20% will be used to test the predictive model. This is to avoid over-fitting on our model.
-- Visualize distributions of training data features using histograms to identify better predictors from our data set
-- Use classification with a decision tree to build the predictive model
-- Include a visualization of the decision tree
-- Visualise the test data predictions
-
+- 80% of the data will be used to train the predictive model, and 20% will be used to test the predictive model. To avoid over-fitting in the model, use cross validation.
+- Visualize distributions of training data features using histograms to identify better predictors from the data set.
+- Use decision tree classification to build the predictive model.
+- Visualise the test data predictions.
 
 ### Choosing decision tree classification
 
 We choose decision tree classification for our analysis because it is parametric. In our attempt to build a model that ranks features based on their importance, decision tree classification takes all of the features and complete training data to pick the strongest predictors. Other supervised learning approaches that are non-parametric such as K-Nearest Neighbours would not be able to rank the features by importance, and thus, fail to answer our analysis question.
-
 
 ### Usage
 
@@ -90,15 +75,9 @@ We choose decision tree classification for our analysis because it is parametric
 
 ``Rscript -e "rmarkdown::render('doc/report.Rmd')``
 
-    
 ### Result Summary and Visualization
 
-- Report accuracy of predicative model on test data set.
-
-
-### Report
-[Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md)
-
+The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization of the importance of features and accuracy of predicative model on test data set.
 
 ### Dependencies
 Python and Python Packages:
@@ -109,14 +88,11 @@ Python and Python Packages:
 - seaborn
 - argparse
 
-
 ### Relevant research links:
-  - [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)
   - [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
-
 
 ### Citation 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Insulin) (for basic terms of medical attributes and their importance in the cancer research).
- 
+
 - Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)

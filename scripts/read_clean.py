@@ -1,14 +1,20 @@
+# Akansha Vashisth, Nov 2018
+#
+# This script does the following:
+# - reads the input file(breast_cancer.csv parsed by the argument),
+# - verfies all the columns in the file using assert statements that verify all variables are complete (i.e. don't have NAs or missing values),
+# - changes column name 'MCP.1' to 'MCP1',
+# - writes the new clean data file(output file).
+# Argument variables of the script are an input data file and
+# a clean data output file containing all the data. 
+#
+# Dependencies: argparse and pandas
+#
+# Usage: python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv
 
-
+# package import for parsing arguments
 import argparse
 import pandas as pd
-
-'''This script does the following:
-- reads the input file(breast_cancer.csv parsed by the argument),
-- verfies all the columns in the file using assert statements that verify all variables are complete (i.e. don't have NAs or missing values),
-- changes column name 'MCP.1' to 'MCP1',
-- writes the new clean data file(output file).
-'''
 
 # variable for parsing
 parser = argparse.ArgumentParser()
