@@ -1,4 +1,4 @@
-# Supervised Learning Model to Predict Breast Cancer
+# Breast Cancer Prediction
 
 #### Date : 2018-11-30
 
