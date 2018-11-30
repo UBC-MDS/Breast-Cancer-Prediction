@@ -17,7 +17,7 @@
 
 #### Introduction 
 
-The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer paitients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
+The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer patients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
 
 ##### Motivation for analysis
 
@@ -27,7 +27,7 @@ Cancer is an open ended problem till date. It is one of biggest research areas o
   
 The data used in the analysis is from the UCI machine learning repository [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The data comprises of nine predictors, and a binary dependent variable indicating the presence or absence of breast cancer. All nine predictors are quantitative variables with positive values.
   
-Quantitative Attributes: 
+Quantitative attributes and their description: 
   
 *Age* (years) : Age of the individual.
   
@@ -82,7 +82,7 @@ We choose decision tree classification for our analysis because it is parametric
 
 #### Result Summary and Visualization
 
-The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of predicative model on test data set.
+The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of predictive model on test data set.
 
 | Result files| Link to file|
 | ---- | -------|
