@@ -3,7 +3,7 @@
 # This script analyzes the data and makes predictions.
 # It creates a decision tree classifier with ideal hyperparameters
 # (maximum depth and minimum samples split). These hyperparameters
-# are calculated over the 80% training data using 5-fold cross validation.
+# are calculated over the 80% training data using 3-fold cross validation.
 # The predictions are made on the 20% test data. Argument variables of
 # the script are an input data file, a features importance data file, and
 # a detailed data file containing all the data along with predictions and
@@ -48,7 +48,7 @@ def main():
     depth = best_depth(Xtrain, ytrain)
     split = best_samples_split(Xtrain, ytrain)
 
-    model = tree.DecisionTreeClassifier(max_depth = depth, min_samples_split = split)
+    model = tree.DecisionTreeClassifier(max_depth = depth, min_samples_split = split, random_state=42)
     model.fit(Xtrain,ytrain)
 
     results = pd.DataFrame(np.vstack((feature_cols, model.feature_importances_)))
@@ -81,14 +81,14 @@ def best_depth(X, y):
     '''
     ideitifies the best value for maximum depth in a decision tree
     by iterating over values 1 to 40 and returns value that gave the best
-    average accuracy over 5-fold cross-validation
+    average accuracy over 3-fold cross-validation
     '''
     depths = np.linspace(1, 40, 40, endpoint=True)
     train_accuracy = []
 
     for i in depths:
-        model = tree.DecisionTreeClassifier(max_depth=i)
-        avg_score = np.mean(cross_val_score(model, X, y, cv=5))
+        model = tree.DecisionTreeClassifier(max_depth=i, random_state=42)
+        avg_score = np.mean(cross_val_score(model, X, y, cv=3))
         train_accuracy.append(avg_score)
 
     return depths[np.argmax(train_accuracy)]
@@ -97,14 +97,14 @@ def best_samples_split(X, y):
     '''
     ideitifies the best value for minimum samples split in a decision tree
     by iterating over values 0.1 to 1.0 and returns value that gave the best
-    average accuracy over 5-fold cross-validation
+    average accuracy over 3-fold cross-validation
     '''
-    splits = np.linspace(0.1, 1.0, 10, endpoint=True)
+    splits = range(2,21,1)
     train_accuracy = []
 
     for i in splits:
-        model = tree.DecisionTreeClassifier(min_samples_split=i)
-        avg_score = np.mean(cross_val_score(model, X, y, cv=5))
+        model = tree.DecisionTreeClassifier(min_samples_split=i, random_state=42)
+        avg_score = np.mean(cross_val_score(model, X, y, cv=3))
         train_accuracy.append(avg_score)
 
     return splits[np.argmax(train_accuracy)]

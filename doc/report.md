@@ -15,7 +15,13 @@ The analysis is built on the anthropometric data and parameters of 64 patients w
 Data Set
 --------
 
-The data comprises of nine predictors, and a binary dependent variable indicating the presence or absence of breast cancer. All nine predictors are quantitative variables with positive values. A summary of data set is as follows:
+The data comprises of nine predictors, and a binary dependent variable indicating the presence or absence of breast cancer. All nine predictors are quantitative variables with positive values.
+
+### Assumptions
+
+There are several underlying assumptions of the analysis. The first of these assumptions is reliability of the data. The analysis doesn't investigate the source and circumstances under which the data was collected. Additionally, the predictors available in the data are the only source of information available, meaning all else is assumed equal. Lastly, the model of choice for the analysis is assumed to be decision tree classification rather than any other supervised learning algorithm.
+
+A summary of data set is as follows:
 
 |         |       Age|       BMI|   Glucose|   Insulin|        HOMA|    Leptin|  Adiponectin|   Resistin|       MCP1|
 |---------|---------:|---------:|---------:|---------:|-----------:|---------:|------------:|----------:|----------:|
@@ -26,32 +32,34 @@ The data comprises of nine predictors, and a binary dependent variable indicatin
 | 3rd Qu. |  71.00000|  31.24144|  102.0000|  11.18925|   2.8577875|  37.37830|    11.815970|  17.755208|   700.0850|
 | Max.    |  89.00000|  38.57876|  201.0000|  58.46000|  25.0503419|  90.28000|    38.040000|  82.100000|  1698.4400|
 
-Table 1. Summary of data set
-
 A visual distribution of each predictor separated by breast cancer patients and healthy controls is as follows:
 
 ![Figure 1. Distribution of predictors separated by classification](report_files/figure-markdown_github/eda_plots-1.png)
+
+In Figure 1 above, we observe bias in healthy controls for low values of Resistin, Glucose and Leptin. A few features, such as Insulin and HOMA, do not have bias between patients and healthy controls and most of the values are very low. There is a consistent spread of values in Age and BMI, but the values greatly overlap for both classifications.
 
 Analysis
 --------
 
 The analysis to identify the strongest predictors is best addressed using a decision tree classification algorithm. This algorithm is parametric, which allows it to assess all the features and complete training data to pick the strongest predictors. Other supervised learning approaches that are non-parametric such as K-Nearest Neighbours would not be able to rank the predictors by their importance.
 
-The configuration of the decision tree classifier algorithm was optimized for this analysis by the process of cross-validation. In this process, different values of maximum tree depth and minimum samples split were tested on a subset of the data and the optimum values were used to carry out the predictions. The accuracy of the predictions on training and test data are as follows:
+The configuration of the decision tree classifier algorithm was optimized for this analysis using 3-fold cross-validation. The limited size of data did not allow for greater number of folds. In this process, forty values from 1 to 40 for maximum tree depth and twenty values from 1 to 20 for minimum samples split were tested on a subset of the data and the optimum values were used to carry out the predictions. The accuracy of the predictions on training and test data are as follows:
 
-![Figure 2. Training and test accuracy](report_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![Figure 2. Training and test accuracy](report_files/figure-markdown_github/accuracy-1.png)
+
+The accuracy of predictions, as illustrated in the Figure 2, show low variance (measured as test error - train error) indicating very little overfitting in the model.
 
 Results
 -------
 
-The result of the analysis indicates that Glucose, Resistin and Age are the strongest indicators of breast cancer. The complete list of parameters which are important in predicting breast cancer are as follows:
+The result of the analysis indicates that Glucose, Leptin and Resistin are the strongest indicators of breast cancer. The complete list of parameters which are important in predicting breast cancer are as follows:
 
 <img src="../results/results.png" alt="Figure 3. Predictors of breast cancer" width="640" />
 <p class="caption">
 Figure 3. Predictors of breast cancer
 </p>
 
-The analysis suggests that Glucose levels are around 36%, Resistin 22% and Age 12% indicative of breast cancer. The predictors that are not indicative of breast cancer are HOMA and Insulin.
+The analysis suggests that Glucose levels are around 57%, Leptin 25% and Resistin 18% indicative of breast cancer. The other predictors are not indicative of breast cancer.
 
 Critique
 --------
@@ -62,15 +70,11 @@ The primary limitation of the analysis is limited data. The model is trained on 
 
 Additionally, the simplistic anthropometric data and parameters that can be gathered in a routine blood analysis are certainly useful as biomarkers but are not sufficiently detailed to be key predictors.
 
-### Assumptions
-
-There are several underlying assumptions of the analysis. The first of these assumptions is reliability of the data. The analysis doesn't investigate the source and circumstances under which the data was collected. Additionally, the predictors available in the data are the only source of information available, meaning all else is assumed equal. Lastly, the model of choice for the analysis is assumed to be decision tree classification rather than any other supervised learning algorithm.
-
 Future Direction
 ----------------
 
 Although the breast cancer predictions analysis accomplishes the fundamental question posed in the beginning, there are several ways in which the analysis could be developed further. The ways in which this analysis can be advanced are as follows:
 
 1.  Calculate likelihood of breast cancer in a new patient
-2.  Evaluate feature importance derived by other parametric algorithms
-3.  Assess accuracy of predictions using other models
+2.  Compare and contrast feature importance derived by other parametric supervised learning models
+3.  Conduct analysis on a bigger data set, such as [Kaggle's Breast Cancer Wisconsin Data Set](https://www.kaggle.com/hdza1991/breast-cancer-wisconsin-data-set).
