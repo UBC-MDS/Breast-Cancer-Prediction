@@ -26,8 +26,6 @@ The data comprises of nine predictors, and a binary dependent variable indicatin
 | 3rd Qu. |  71.00000|  31.24144|  102.0000|  11.18925|   2.8577875|  37.37830|    11.815970|  17.755208|   700.0850|
 | Max.    |  89.00000|  38.57876|  201.0000|  58.46000|  25.0503419|  90.28000|    38.040000|  82.100000|  1698.4400|
 
-Table 1. Summary of data set
-
 A visual distribution of each predictor separated by breast cancer patients and healthy controls is as follows:
 
 ![Figure 1. Distribution of predictors separated by classification](report_files/figure-markdown_github/eda_plots-1.png)
@@ -39,7 +37,7 @@ The analysis to identify the strongest predictors is best addressed using a deci
 
 The configuration of the decision tree classifier algorithm was optimized for this analysis by the process of cross-validation. In this process, different values of maximum tree depth and minimum samples split were tested on a subset of the data and the optimum values were used to carry out the predictions. The accuracy of the predictions on training and test data are as follows:
 
-![Figure 2. Training and test accuracy](report_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![Figure 2. Training and test accuracy](report_files/figure-markdown_github/accuracy-1.png)
 
 Results
 -------
@@ -50,6 +48,8 @@ The result of the analysis indicates that Glucose, Resistin and Age are the stro
 <p class="caption">
 Figure 3. Predictors of breast cancer
 </p>
+
+Figure 3. Predictors of breast cancer
 
 The analysis suggests that Glucose levels are around 36%, Resistin 22% and Age 12% indicative of breast cancer. The predictors that are not indicative of breast cancer are HOMA and Insulin.
 
