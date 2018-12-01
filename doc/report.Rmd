@@ -78,7 +78,7 @@ The result of the analysis indicates that Glucose, Leptin and Resistin are the s
 knitr::include_graphics(path = "../results/results.png")
 ```
 
-The analysis suggests that Glucose levels are around 57%, Leptin 25% and Resistin 18% indicative of breast cancer. The other predictors are not indicative of breast cancer.
+The analysis suggests that Glucose levels are around 57%, Leptin 25% and Resistin 18% indicative of breast cancer. The other predictors are not indicative of breast cancer. These results align with the observations in the exploratory data analysis above. The features that demonstrated bias were identified by the model as the strongest predictors of breast cancer.
 
 ## Critique
 
