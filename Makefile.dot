@@ -1,0 +1,32 @@
+digraph G {
+n2[label="all", color="red"];
+n7[label="data/breast_cancer.csv", color="green"];
+n4[label="doc/report.Rmd", color="green"];
+n3[label="doc/report.md", color="red"];
+n8[label="img/plot", color="red"];
+n5[label="results/breast_cancer_new.csv", color="red"];
+n10[label="results/detailed.csv", color="red"];
+n12[label="results/importance.csv", color="red"];
+n13[label="results/results.png", color="red"];
+n11[label="scripts/analysis.py", color="green"];
+n9[label="scripts/eda.py", color="green"];
+n14[label="scripts/plot.py", color="green"];
+n6[label="scripts/read_clean.py", color="green"];
+n3 -> n2 ; 
+n4 -> n3 ; 
+n8 -> n3 ; 
+n5 -> n3 ; 
+n10 -> n3 ; 
+n12 -> n3 ; 
+n13 -> n3 ; 
+n5 -> n8 ; 
+n9 -> n8 ; 
+n7 -> n5 ; 
+n6 -> n5 ; 
+n5 -> n10 ; 
+n11 -> n10 ; 
+n5 -> n12 ; 
+n11 -> n12 ; 
+n12 -> n13 ; 
+n14 -> n13 ; 
+}
