@@ -1,6 +1,10 @@
-# Breast Cancer Prediction
+<img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="180" width="220"/>
 
-#### Date : 2018-11-30
+# Breast Cancer Prediction 
+
+**Date:** 2018-11-30
+
+**License:** [MIT](https://opensource.org/licenses/MIT)
 
 #### Authors
 
@@ -64,21 +68,65 @@ We choose decision tree classification for our analysis because it is parametric
 
 #### Usage
 
+Steps without Docker:
+
 1. Clone this repo, and using the command line, navigate to the root of this project.
 
-2. Run the following commands:
+    Without Make:
+    
+    2. Run the following commands:
 
-``python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv``
+      ```python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv```
 
-``python scripts/eda.py results/breast_cancer_new.csv img/plot``
+      ```python scripts/eda.py results/breast_cancer_new.csv img/plot```
 
-``python scripts/analysis.py results/breast_cancer_new.csv results/detailed.csv``
+      ```python scripts/analysis.py results/breast_cancer_new.csv results/detailed.csv```
 
-``python scripts/analysis.py results/breast_cancer_new.csv results/importance.csv``
+      ```python scripts/analysis.py results/breast_cancer_new.csv results/importance.csv```
 
-``python scripts/plot.py results/importance.csv results/results.png``
+      ```python scripts/plot.py results/importance.csv results/results.png```
 
-``Rscript -e "rmarkdown::render('doc/report.Rmd')``
+      ```Rscript -e "rmarkdown::render('doc/report.Rmd')```
+
+    With Make:
+    
+    2. Makefile runs all the above commands using the following command:
+        
+      ```make all```
+        
+    3. To erase all analysis output files created by the following command:
+        
+      ```make clean```
+
+#### Dependencies Diagram
+
+![](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/Makefile.png)
+
+
+#### Using docker image
+
+Follow the steps to use docker image:
+
+1. Use launchpad/Finder/Start menu/etc to find and launch Docker.
+
+2. Open command line (terminal/GitBash) and run the following command:
+```docker pull talhaadnan100/breast-cancer-prediction```
+
+    To verify that it successfully pulled use command: ```docker images```
+
+3. Now, to launch a container from the image run the following command:
+```docker run --rm it -e PASSWORD=test -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction /bin/bash```
+
+    If it worked, then your command line prompt should look something like this:
+
+    ```root@18907dd9d819:/#```
+
+4. Now you can navigate in the directory ``/home/Breast-Cancer-Prediction`` by using the following commands to explore the container:
+ ```cd``` , ```ls```, ```pwd```
+
+5. To run the whole analysis from top to bottom, run command: ```make all```.
+
+6. You can use ``exit`` command to exit from the the container and go back to your regular prompt/terminal.
 
 #### Result Summary and Visualization
 
@@ -91,10 +139,9 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 | File for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
 | Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
 
-
 #### Dependencies
 
-Python 3.7 and the following python packages:
+Python 3.6.5 and the following python packages:
 - numpy (version 1.14.3)
 - pandas (version 0.23.0)
 - sklearn (version 0.19.1)
@@ -102,12 +149,20 @@ Python 3.7 and the following python packages:
 - seaborn (version 0.9.0)
 - argparse (version 1.0.10)
 
-#### Relevant research links:
+RStudio 1.1.463
+
+#### Relevant research link
 
 [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
+
+#### Community Guidelines
+
+This project is released with a [Contributor Code of Conduct](https://github.com/akanshaVashisth/Breast-Cancer-Prediction/blob/new-branch-name/code-of-conduct.md). By participating in this project you agree to abide by its terms. Feedback, bug reports (and fixes!), and feature requests are welcomed.
 
 #### Citation 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Insulin) (for basic terms of medical attributes and their importance in the cancer research).
 
 - Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1).
+
+- Breast cancer image by [ConsenSys Media](https://www.google.com/search?client=safari&rls=en&biw=1183&bih=750&tbm=isch&sa=1&ei=TUAKXOKZG6SDk-4PzJCTuAo&q=breast+cancer+symbol&oq=breast+cancer+sym&gs_l=img.3.1.0l10.3803.4511..6188...0.0..0.69.159.3......1....1..gws-wiz-img.......0i67.Xlr8qcTDibM#imgrc=lB8QLGMxwvMk8M:)
