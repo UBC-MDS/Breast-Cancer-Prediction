@@ -72,27 +72,27 @@ Steps without Docker:
     
       1. Run the following commands:
 
-        ```python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv```
+      ```python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv```
 
-        ```python scripts/eda.py results/breast_cancer_new.csv img/plot```
+      ```python scripts/eda.py results/breast_cancer_new.csv img/plot```
 
-        ```python scripts/analysis.py results/breast_cancer_new.csv results/detailed.csv```
+      ```python scripts/analysis.py results/breast_cancer_new.csv results/detailed.csv```
 
-        ```python scripts/analysis.py results/breast_cancer_new.csv results/importance.csv```
+      ```python scripts/analysis.py results/breast_cancer_new.csv results/importance.csv```
 
-        ```python scripts/plot.py results/importance.csv results/results.png```
+      ```python scripts/plot.py results/importance.csv results/results.png```
 
-        ```Rscript -e "rmarkdown::render('doc/report.Rmd')```
+      ```Rscript -e "rmarkdown::render('doc/report.Rmd')```
 
     II With Make:
     
       1. Makefile runs all the above commands using the following command:
         
-        ```make all```
+       ```make all```
         
       2. To erase all analysis output files created by the following command:
         
-        ```make clean```
+       ```make clean```
 
 #### Dependencies Diagram
 
