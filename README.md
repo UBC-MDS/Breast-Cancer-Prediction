@@ -65,8 +65,11 @@ We choose decision tree classification for our analysis because it is parametric
 #### Usage
 
 Steps without Docker:
+
 1. Clone this repo, and using the command line, navigate to the root of this project.
+
     I Without Make:
+    
         1. Run the following commands:
 
         ``python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv``
@@ -82,8 +85,10 @@ Steps without Docker:
         ``Rscript -e "rmarkdown::render('doc/report.Rmd')``
 
     II With Make:
+    
         1. Makefile runs all the above commands using the following command:
         ```make all```
+        
         2. To erase all analysis output files created by the following command:
         ```make clean```
 
@@ -101,12 +106,12 @@ Steps for using docker image:
 2. Open command line (terminal/GitBash) and run the following command:
 ```docker pull talhaadnan100/breast-cancer-prediction```
 
-To verify that it successfully pulled use command: ```docker images```
+    To verify that it successfully pulled use command: ```docker images```
 
 3. Now, to launch a container from the image run the following command:
 ```docker run --rm it -e PASSWORD=test -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction /bin/bash```
 
-If it worked, then your command line prompt should look something like this:
+    If it worked, then your command line prompt should look something like this:
 
 ```root@18907dd9d819:/#```
 
