@@ -1,4 +1,4 @@
-# Breast Cancer Prediction <img src="https://www.google.com/search?client=safari&rls=en&biw=1183&bih=750&tbm=isch&sa=1&ei=TUAKXOKZG6SDk-4PzJCTuAo&q=breast+cancer+symbol&oq=breast+cancer+sym&gs_l=img.3.1.0l10.3803.4511..6188...0.0..0.69.159.3......1....1..gws-wiz-img.......0i67.Xlr8qcTDibM#imgrc=lB8QLGMxwvMk8M:" align="right" />
+# Breast Cancer Prediction <img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" />
 
 **Date:** 2018-11-30
 **License:** [MIT](https://opensource.org/licenses/MIT)
