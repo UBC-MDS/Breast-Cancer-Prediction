@@ -1,7 +1,7 @@
-# Breast Cancer Prediction
+# Breast Cancer Prediction <img src="https://www.google.com/search?client=safari&rls=en&biw=1183&bih=750&tbm=isch&sa=1&ei=TUAKXOKZG6SDk-4PzJCTuAo&q=breast+cancer+symbol&oq=breast+cancer+sym&gs_l=img.3.1.0l10.3803.4511..6188...0.0..0.69.159.3......1....1..gws-wiz-img.......0i67.Xlr8qcTDibM#imgrc=lB8QLGMxwvMk8M:" align="right" />
 
-#### Date : 2018-11-30
-
+**Date:** 2018-11-30
+**License:** [MIT](https://opensource.org/licenses/MIT)
 #### Authors
 
 | Name | Github |
@@ -149,8 +149,14 @@ Python 3.7 and the following python packages:
 
 [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
 
+#### Community Guidelines
+
+This project is released with a [Contributor Code of Conduct](https://github.com/akanshaVashisth/Breast-Cancer-Prediction/blob/new-branch-name/code-of-conduct.md). By participating in this project you agree to abide by its terms. Feedback, bug reports (and fixes!), and feature requests are welcomed.
+
 #### Citation 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Insulin) (for basic terms of medical attributes and their importance in the cancer research).
 
 - Patrício, M., Pereira, J., Crisóstomo, J., Matafome, P., Gomes, M., Seiça, R., & Caramelo, F. (2018). [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1).
+
+- Breast cancer image by [ConsenSys Media](https://www.google.com/search?client=safari&rls=en&biw=1183&bih=750&tbm=isch&sa=1&ei=TUAKXOKZG6SDk-4PzJCTuAo&q=breast+cancer+symbol&oq=breast+cancer+sym&gs_l=img.3.1.0l10.3803.4511..6188...0.0..0.69.159.3......1....1..gws-wiz-img.......0i67.Xlr8qcTDibM#imgrc=lB8QLGMxwvMk8M:)
