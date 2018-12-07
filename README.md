@@ -141,7 +141,7 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 
 #### Dependencies
 
-Python 3.6.5 and the following python packages:
+Python version 3.6.5 and the following python packages:
 - numpy (version 1.14.3)
 - pandas (version 0.23.0)
 - sklearn (version 0.19.1)
@@ -149,7 +149,12 @@ Python 3.6.5 and the following python packages:
 - seaborn (version 0.9.0)
 - argparse (version 1.0.10)
 
-RStudio 1.1.463
+R version 3.5.1 and the following R packages:
+- tidyverse (version 1.2.1)
+- cowsay (version 0.7.0)
+- gridExtra (version 2.3)
+- png (version 0.1-7)
+- here (version 0.1)
 
 #### Relevant research link
 
