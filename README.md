@@ -88,11 +88,11 @@ Steps without Docker:
     
       1. Makefile runs all the above commands using the following command:
         
-       ```make all```
+      ```make all```
         
       2. To erase all analysis output files created by the following command:
         
-       ```make clean```
+      ```make clean```
 
 #### Dependencies Diagram
 
