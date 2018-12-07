@@ -66,9 +66,9 @@ We choose decision tree classification for our analysis because it is parametric
 
 Steps without Docker:
 
-i Clone this repo, and using the command line, navigate to the root of this project.
+1. Clone this repo, and using the command line, navigate to the root of this project.
 
-    I Without Make:
+    Without Make:
     
       2. Run the following commands:
 
@@ -84,7 +84,7 @@ i Clone this repo, and using the command line, navigate to the root of this proj
 
       ```Rscript -e "rmarkdown::render('doc/report.Rmd')```
 
-    II With Make:
+    With Make:
     
       2. Makefile runs all the above commands using the following command:
         
