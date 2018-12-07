@@ -70,7 +70,7 @@ Steps without Docker:
 
     Without Make:
     
-      2. Run the following commands:
+    2. Run the following commands:
 
       ```python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv```
 
@@ -86,11 +86,11 @@ Steps without Docker:
 
     With Make:
     
-      2. Makefile runs all the above commands using the following command:
+    2. Makefile runs all the above commands using the following command:
         
       ```make all```
         
-      3. To erase all analysis output files created by the following command:
+    3. To erase all analysis output files created by the following command:
         
       ```make clean```
 
