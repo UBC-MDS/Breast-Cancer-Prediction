@@ -66,7 +66,7 @@ We choose decision tree classification for our analysis because it is parametric
 
 Steps without Docker:
 
-1. Clone this repo, and using the command line, navigate to the root of this project.
+i Clone this repo, and using the command line, navigate to the root of this project.
 
     I Without Make:
     
