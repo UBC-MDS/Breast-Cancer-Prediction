@@ -99,7 +99,7 @@ Steps without Docker:
 
 #### Using docker image
 
-Steps for using docker image:
+Follow the steps to use docker image:
 
 1. Use launchpad/Finder/Start menu/etc to find and launch Docker.
 
@@ -118,7 +118,7 @@ Steps for using docker image:
 4. Now you can navigate in the directory ``/home/Breast-Cancer-Prediction`` by using the following commands to explore the container:
  ```cd``` , ```ls```, ```pwd```
 
-5. To run the whole analysis from top to bottom, run : ```make all```.
+5. To run the whole analysis from top to bottom, run command: ```make all```.
 
 6. You can use ``exit`` command to exit from the the container and go back to your regular prompt/terminal.
 
