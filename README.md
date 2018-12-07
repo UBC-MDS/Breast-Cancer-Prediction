@@ -64,21 +64,58 @@ We choose decision tree classification for our analysis because it is parametric
 
 #### Usage
 
+Steps without Docker:
 1. Clone this repo, and using the command line, navigate to the root of this project.
+    I Without Make:
+        1. Run the following commands:
 
-2. Run the following commands:
+        ``python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv``
 
-``python scripts/read_clean.py data/breast_cancer.csv results/breast_cancer_new.csv``
+        ``python scripts/eda.py results/breast_cancer_new.csv img/plot``
 
-``python scripts/eda.py results/breast_cancer_new.csv img/plot``
+        ``python scripts/analysis.py results/breast_cancer_new.csv results/detailed.csv``
 
-``python scripts/analysis.py results/breast_cancer_new.csv results/detailed.csv``
+        ``python scripts/analysis.py results/breast_cancer_new.csv results/importance.csv``
 
-``python scripts/analysis.py results/breast_cancer_new.csv results/importance.csv``
+        ``python scripts/plot.py results/importance.csv results/results.png``
 
-``python scripts/plot.py results/importance.csv results/results.png``
+        ``Rscript -e "rmarkdown::render('doc/report.Rmd')``
 
-``Rscript -e "rmarkdown::render('doc/report.Rmd')``
+    II With Make:
+        1. Makefile runs all the above commands using the following command:
+        ```make all```
+        2. To erase all analysis output files created by the following command:
+        ```make clean```
+
+#### Dependencies Diagram
+
+![](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/Makefile.png)
+
+
+#### Using docker image
+
+Steps for using docker image:
+
+1. Use launchpad/Finder/Start menu/etc to find and launch Docker.
+
+2. Open command line (terminal/GitBash) and run the following command:
+```docker pull talhaadnan100/breast-cancer-prediction```
+
+To verify that it successfully pulled use command: ```docker images```
+
+3. Now, to launch a container from the image run the following command:
+```docker run --rm it -e PASSWORD=test -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction /bin/bash```
+
+If it worked, then your command line prompt should look something like this:
+
+```root@18907dd9d819:/#```
+
+4. Now you can navigate in the directory ``/home/Breast-Cancer-Prediction`` by using the following commands to explore the container:
+ ```cd``` , ```ls```, ```pwd```
+
+5. To run the whole analysis from top to bottom, run : ```make all```.
+
+6. You can use ``exit`` command to exit from the the container and go back to your regular prompt/terminal.
 
 #### Result Summary and Visualization
 
@@ -90,7 +127,6 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 | File that includes all the predictions| [detailed.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/detailed.csv)|
 | File for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
 | Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
-
 
 #### Dependencies
 
