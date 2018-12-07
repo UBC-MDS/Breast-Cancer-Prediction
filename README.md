@@ -113,7 +113,7 @@ Steps for using docker image:
 
     If it worked, then your command line prompt should look something like this:
 
-```root@18907dd9d819:/#```
+    ```root@18907dd9d819:/#```
 
 4. Now you can navigate in the directory ``/home/Breast-Cancer-Prediction`` by using the following commands to explore the container:
  ```cd``` , ```ls```, ```pwd```
