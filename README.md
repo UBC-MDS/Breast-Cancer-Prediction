@@ -151,7 +151,7 @@ Python 3.6.5 and the following python packages:
 
 RStudio 1.1.463
 
-#### Relevant research links:
+#### Relevant research link
 
 [Machine learning applications in cancer prognosis and prediction](https://www.sciencedirect.com/science/article/pii/S2001037014000464)
 
