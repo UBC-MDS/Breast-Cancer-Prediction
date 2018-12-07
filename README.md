@@ -1,7 +1,10 @@
-# Breast Cancer Prediction <img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="60" width="70"/>
+# Breast Cancer Prediction 
+<img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="100" width="120"/>
 
 **Date:** 2018-11-30
+
 **License:** [MIT](https://opensource.org/licenses/MIT)
+
 #### Authors
 
 | Name | Github |
