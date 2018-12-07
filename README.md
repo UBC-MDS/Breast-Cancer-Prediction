@@ -1,4 +1,4 @@
-<img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="180" width="200"/>
+<img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="180" width="220"/>
 
 # Breast Cancer Prediction 
 
