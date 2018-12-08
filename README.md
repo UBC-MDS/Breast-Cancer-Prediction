@@ -1,4 +1,4 @@
-<img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="180" width="220"/>
+<img src="https://cdn-images-1.medium.com/max/1600/0*uq2tGIOzQ0_fJXlI." align="right" height="190" width="220"/>
 
 # Breast Cancer Prediction 
 
@@ -98,46 +98,22 @@ Steps without Docker:
         
       ```make clean```
 
+#### Docker Usage
+
+Follow the steps to run this analysis using Docker:
+
+1. Clone/download this repository and run the following command:
+```docker pull talhaadnan100/breast-cancer-prediction``` 
+
+2. Now, use the command line to navigate to the root of this project on your computer, and then type the following (filling in PATH_ON_YOUR_COMPUTER with the absolute path to the root of this project on your computer):
+```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' all```
+
+3. To clean up the analysis use the following command:
+```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' clean```
+
 #### Dependencies Diagram
 
 ![](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/Makefile.png)
-
-
-#### Docker Usage
-
-Follow the steps to use docker image:
-
-1. Use launchpad/Finder/Start menu/etc to find and launch Docker.
-
-2. Open command line (terminal/GitBash) and run the following command:
-```docker pull talhaadnan100/breast-cancer-prediction```
-
-    To verify that it successfully pulled use command: ```docker images```
-
-3. Now, to launch a container from the image run the following command:
-```docker run --rm it -e PASSWORD=test -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction /bin/bash```
-
-    If it worked, then your command line prompt should look something like this:
-
-    ```root@18907dd9d819:/#```
-
-4. Now you can navigate in the directory ``/home/Breast-Cancer-Prediction`` by using the following commands to explore the container:
- ```cd``` , ```ls```, ```pwd```
-
-5. To run the whole analysis from top to bottom, run command: ```make all```.
-
-6. You can use ``exit`` command to exit from the container and go back to your regular prompt/terminal.
-
-#### Result Summary and Visualization
-
-The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of the predictive model on the test data set.
-
-| Result files| Link to file|
-| ---- | -------|
-| File after cleaning the data| [breast_cancer_new.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/breast_cancer_new.csv)|
-| File that includes all the predictions| [detailed.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/detailed.csv)|
-| File for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
-| Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
 
 #### Dependencies
 
@@ -155,6 +131,17 @@ R version 3.5.1 and the following R packages:
 - gridExtra (version 2.3)
 - png (version 0.1-7)
 - here (version 0.1)
+
+#### Result Summary and Visualization
+
+The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of the predictive model on the test data set.
+
+| Result files| Link to file|
+| ---- | -------|
+| File after cleaning the data| [breast_cancer_new.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/breast_cancer_new.csv)|
+| File that includes all the predictions| [detailed.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/detailed.csv)|
+| File for importance of features| [importance.csv](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/importance.csv)|
+| Plot for the result | [results.png](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/results/results.png) |
 
 #### Relevant research link
 
