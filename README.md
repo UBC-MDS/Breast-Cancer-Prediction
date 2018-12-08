@@ -114,6 +114,10 @@ Follow the steps to run this analysis using Docker:
 
 ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' clean```
 
+Note for windows users - 
+
+While running the above commands, do not include quotes in ```'/home/breast-cancer-prediction'``` part.
+
 #### Dependencies Diagram
 
 ![](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/Makefile.png)
