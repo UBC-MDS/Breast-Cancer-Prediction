@@ -103,12 +103,15 @@ Steps without Docker:
 Follow the steps to run this analysis using Docker:
 
 1. Clone/download this repository and run the following command:
+
 ```docker pull talhaadnan100/breast-cancer-prediction``` 
 
 2. Now, use the command line to navigate to the root of this project on your computer, and then type the following (filling in PATH_ON_YOUR_COMPUTER with the absolute path to the root of this project on your computer):
+
 ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' all```
 
 3. To clean up the analysis use the following command:
+
 ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' clean```
 
 #### Dependencies Diagram
