@@ -21,11 +21,11 @@
 
 #### Introduction 
 
-The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer patients and 52 records of healthy controls. There are 9 features in the dataset that contribute to predict breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
+The goal of this project is to discover the strongest predictors of breast cancer in the data source [Breast Cancer Coimbra Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra). The dataset includes 64 records of breast cancer patients and 52 records of healthy controls. There are 9 features in the dataset that contribute in predicting breast cancer. Using these features, the project aims to identify the strongest predictors of breast cancer.
 
 ##### Motivation for analysis
 
-Cancer is an open ended problem till date. It is one of biggest research areas of medical science. There are many types of  cancers which are rapidly getting common. It is estimated that 41,400 deaths (40,920 women and 480 men) from breast cancer will occur this year [2018](https://www.cancer.net/cancer-types/breast-cancer/statistics/2015). We were highly interested to use machine learning models to dive in this dataset and explore about breast cancer predictions.
+Cancer is an open-ended problem till date. It is one of biggest research areas of medical science. There are many types of cancers which are rapidly getting common. It is estimated that 41,400 deaths (40,920 women and 480 men) from breast cancer will occur this year [2018](https://www.cancer.net/cancer-types/breast-cancer/statistics/2015). We were highly interested to use machine learning models to dive in this dataset and explore about breast cancer predictions.
 
 #### Data Exploration
   
@@ -45,7 +45,7 @@ Quantitative attributes and their description:
   
 *Leptin* (ng/mL) : Leptin, "the hormone of energy expenditure", is a hormone predominantly made by adipose cells that helps to regulate energy balance by inhibiting hunger. Leptin is opposed by the actions of the hormone ghrelin, the "hunger hormone". Both hormones act on receptors in the arcuate nucleus of the hypothalamus. 
   
-*Adiponectin* (µg/mL) : Adiponectin (also referred to as GBP-28, apM1, AdipoQ and Acrp30) is a protein hormone which is involved in regulating glucose levels as well as fatty acid breakdown. In humans it is encoded by the ADIPOQ gene and it is produced in adipose tissue.
+*Adiponectin* (µg/mL) : Adiponectin (also referred to as GBP-28, apM1, AdipoQ and Acrp30) is a protein hormone which is involved in regulating glucose levels as well as fatty acid breakdown. In humans, it is encoded by the ADIPOQ gene and it is produced in adipose tissue.
   
 *Resistin* (ng/mL) : Resistin also known as adipose tissue-specific secretory factor (ADSF) or C/EBP-epsilon-regulated myeloid-specific secreted cysteine-rich protein (XCP1) is a cysteine-rich adipose-derived peptide hormone that in humans is encoded by the RETN gene.
   
@@ -94,7 +94,7 @@ Steps without Docker:
         
       ```make all```
         
-    3. To erase all analysis output files created by the following command:
+    3. To erase all analysis output files created by make all, use the following command:
         
       ```make clean```
 
@@ -103,7 +103,7 @@ Steps without Docker:
 ![](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/Makefile.png)
 
 
-#### Using docker image
+#### Docker Usage
 
 Follow the steps to use docker image:
 
@@ -126,11 +126,11 @@ Follow the steps to use docker image:
 
 5. To run the whole analysis from top to bottom, run command: ```make all```.
 
-6. You can use ``exit`` command to exit from the the container and go back to your regular prompt/terminal.
+6. You can use ``exit`` command to exit from the container and go back to your regular prompt/terminal.
 
 #### Result Summary and Visualization
 
-The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of predictive model on test data set.
+The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/master/doc/report.md) records visualization for the importance of all the features and accuracy of the predictive model on the test data set.
 
 | Result files| Link to file|
 | ---- | -------|
@@ -141,7 +141,7 @@ The [Final report](https://github.com/UBC-MDS/Breast-Cancer-Prediction/blob/mast
 
 #### Dependencies
 
-Python 3.6.5 and the following python packages:
+Python version 3.6.5 and the following python packages:
 - numpy (version 1.14.3)
 - pandas (version 0.23.0)
 - sklearn (version 0.19.1)
@@ -149,7 +149,12 @@ Python 3.6.5 and the following python packages:
 - seaborn (version 0.9.0)
 - argparse (version 1.0.10)
 
-RStudio 1.1.463
+R version 3.5.1 and the following R packages:
+- tidyverse (version 1.2.1)
+- cowsay (version 0.7.0)
+- gridExtra (version 2.3)
+- png (version 0.1-7)
+- here (version 0.1)
 
 #### Relevant research link
 
