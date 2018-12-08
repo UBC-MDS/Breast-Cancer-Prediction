@@ -108,17 +108,15 @@ Follow the steps to run this analysis using Docker:
 
 2. Now, use the command line to navigate to the root of this project on your computer, and then type the following (filling in PATH_ON_YOUR_COMPUTER with the absolute path to the root of this project on your computer):
 
-```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' all```
+Mac/Linux users: ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' all```
+
+Windows users: ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C /home/breast-cancer-prediction all```
 
 3. To clean up the analysis use the following command:
 
-```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' clean```
+Mac/Linux users: ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C '/home/breast-cancer-prediction' clean```
 
-Note:
-
-Mac/Linux users: run the whole command with quotes.
-
-Windows users: run the whole command without quotes.
+Windows users: ```docker run --rm -v <PATH-ON-YOUR-COMPUTER>:/home/breast-cancer-prediction talhaadnan100/breast-cancer-prediction make -C /home/breast-cancer-prediction clean```
 
 #### Dependencies Diagram
 
